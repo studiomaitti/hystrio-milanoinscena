@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Avant Garde Book BT';
+    src: url('avgardn-webfont.eot');
+    src: url('avgardn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('avgardn-webfont.woff') format('woff'),
+         url('avgardn-webfont.ttf') format('truetype'),
+         url('avgardn-webfont.svg#avantgarde_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
