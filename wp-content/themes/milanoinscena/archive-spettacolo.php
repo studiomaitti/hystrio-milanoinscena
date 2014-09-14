@@ -156,9 +156,21 @@ if(isset($_GET['ss']) && $_GET['ss']=='csp'){
     ////////////////////////////////////////////////////////////////////////
     //RICERCA SPETTACOLO PER DATA: WEEKEND
     
-    $saturday = date("Ymd", strtotime('next Saturday'));
-    $sunday = date("Ymd", strtotime('next Sunday'));
-    $suffisso_titolo = 'Prossimo Weekend';
+    //Se oggi è sabato o domenica allora deve essere questo weekend
+    $today_week=date('w');
+    if($today_week==0){
+        $suffisso_titolo = 'Questo Weekend';
+        $saturday = date("Ymd", strtotime('-1 day'));
+        $sunday = date("Ymd");
+    } elseif($today_week==6){
+        $suffisso_titolo = 'Questo Weekend';
+        $saturday = date("Ymd");
+        $sunday = date("Ymd", strtotime('+1 day'));
+    } else {
+        $suffisso_titolo = 'Prossimo Weekend';
+        $saturday = date("Ymd", strtotime('next Saturday'));
+        $sunday = date("Ymd", strtotime('next Sunday'));
+    }
 
     $args = array_merge( $wp_query->query_vars, array(
         'meta_query' => array(
@@ -249,6 +261,20 @@ if(isset($_GET['cal']) && $_GET['cal']==1){
 </div>
 	<div id="primary" class="site-content">
             <div id="content" role="main">
+<?php if(isset($_GET['ss']) && $_GET['ss']=='recensioni'): ?>
+<div class="claim">
+Prima si vede, poi si scrive. Questa sezione, infatti, è in continuo aggiornamento perché 
+    <a href="#" class="leggi-tutto">... [leggi tutto]</a>
+    <span class="leggi-tutto-testo">
+        le recensioni vengono pubblicate solo dopo 
+        che gli spettacoli sono stati visti dai nostri critici. Hystrio si 
+        riserva inoltre la scelta di quali titoli recensire. Al momento sono 
+        esclusi gli spettacoli di danza (e dintorni) e, salvo eccezioni, tutti 
+        quegli eventi che hanno in cartellone una permanenza inferiore alle 3 repliche.
+    </span>
+</div>
+<?php endif;  ?>                    
+
                 <?php if(isset($_GET['ss']) && $_GET['ss']=='recensioni'): ?>
                 <h1 class="archive-title">SPETTACOLI RECENSITI</h1>
                 <?php elseif(isset( $_GET['ss'] )): ?>
@@ -256,7 +282,6 @@ if(isset($_GET['cal']) && $_GET['cal']==1){
                 <?php else : ?>
                     <h1 class="archive-title">SPETTACOLI</h1>
                 <?php endif;  ?>                    
-
 
 <?php
 $aSearch=array();

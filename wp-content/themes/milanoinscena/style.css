@@ -530,6 +530,7 @@ a:hover {
     padding: 10px 0 10px 10px;
     width: 106px;
     display: none;
+    z-index: 10;
 }
 .site-header .submenu a{
     width: 100px;
@@ -625,7 +626,22 @@ a:hover {
     font-size: 11px;
     font-weight: 600;
 }
-
+.claim{
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    font-size: 19px;
+    line-height: 26px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.claim a.leggi-tutto{
+    font-size: 16px;
+    text-decoration: none;
+}
+.claim .leggi-tutto-testo{
+    display: none;
+}
 
 /* =Main content and comment content
 -------------------------------------------------------------- */
@@ -1137,17 +1153,32 @@ body.single-teatro .teatro_orari{
 .recensore-voto .voto-0{
     background: url(images/ico-stars-0.png) no-repeat center center;
 }
+.recensore-voto .voto-0_5{
+    background: url(images/ico-stars-0_5.png) no-repeat center center;
+}
 .recensore-voto .voto-1{
     background: url(images/ico-stars-1.png) no-repeat center center;
+}
+.recensore-voto .voto-1_5{
+    background: url(images/ico-stars-1_5.png) no-repeat center center;
 }
 .recensore-voto .voto-2{
     background: url(images/ico-stars-2.png) no-repeat center center;
 }
+.recensore-voto .voto-2_5{
+    background: url(images/ico-stars-2_5.png) no-repeat center center;
+}
 .recensore-voto .voto-3{
     background: url(images/ico-stars-3.png) no-repeat center center;
 }
+.recensore-voto .voto-3_5{
+    background: url(images/ico-stars-3_5.png) no-repeat center center;
+}
 .recensore-voto .voto-4{
     background: url(images/ico-stars-4.png) no-repeat center center;
+}
+.recensore-voto .voto-4_5{
+    background: url(images/ico-stars-4_5.png) no-repeat center center;
 }
 .recensore-voto .voto-5{
     background: url(images/ico-stars-5.png) no-repeat center center;
@@ -1196,8 +1227,17 @@ body.single-teatro .teatro_orari{
 .spettacoli-loop .spettacolo-i .voto-0{
     background: url(images/ico-stars-0-small.png) no-repeat center center;
 }
+.spettacoli-loop .spettacolo-i .voto-0_5{
+    background: url(images/ico-stars-0_5-small.png) no-repeat center center;
+}
 .spettacoli-loop .spettacolo-i .voto-1{
     background: url(images/ico-stars-1-small.png) no-repeat center center;
+}
+.spettacoli-loop .spettacolo-i .voto-1_5{
+    background: url(images/ico-stars-1_5-small.png) no-repeat center center;
+}
+.spettacoli-loop .spettacolo-i .voto-2_5{
+    background: url(images/ico-stars-2_5-small.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i .voto-2{
     background: url(images/ico-stars-2-small.png) no-repeat center center;
@@ -1205,8 +1245,14 @@ body.single-teatro .teatro_orari{
 .spettacoli-loop .spettacolo-i .voto-3{
     background: url(images/ico-stars-3-small.png) no-repeat center center;
 }
+.spettacoli-loop .spettacolo-i .voto-3_5{
+    background: url(images/ico-stars-3_5-small.png) no-repeat center center;
+}
 .spettacoli-loop .spettacolo-i .voto-4{
     background: url(images/ico-stars-4-small.png) no-repeat center center;
+}
+.spettacoli-loop .spettacolo-i .voto-4_5{
+    background: url(images/ico-stars-4_5-small.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i .voto-5{
     background: url(images/ico-stars-5-small.png) no-repeat center center;

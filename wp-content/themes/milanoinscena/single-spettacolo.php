@@ -202,7 +202,7 @@ wp_reset_postdata();
                             <span class="recensore">Recensione di: <?php echo get_the_author(); ?></span>
                             <?php endif; ?>
                             
-                            <span class="voto-i voto-<?php echo $voto;?>">Voto <?php echo $voto;?></span>
+                            <span class="voto-i voto-<?php echo str_replace('.', '_', $voto);?>">Voto <?php echo $voto;?></span>
                         </div>
                         
                         <div class="content">

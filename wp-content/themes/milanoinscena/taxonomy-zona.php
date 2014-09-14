@@ -31,12 +31,6 @@ if(isset($_GET['ss']) && $_GET['ss']=='csp'){
                 'order'      => 'ASC',
             ) );
         query_posts( $args );
-    } else {
-        $args = array_merge( $wp_query->query_vars, array(
-            'orderby'    => 'title',
-            'order'      => 'ASC',
-        ) );
-        query_posts( $args );
     }
 
 } else {
@@ -46,14 +40,16 @@ if(isset($_GET['ss']) && $_GET['ss']=='csp'){
     ) );
     query_posts( $args );
 }
+
+global $wp_query;
+    $term = $wp_query->get_queried_object();
+    $title = $term->name;
 ?>
+
+
 	<div id="primary" class="site-content">
             <div id="content" role="main">
-                <?php if ( 1==1 ) : ?>
-                    <h1 class="archive-title">CERCA TEATRO<?php if($suffisso_titolo){ echo ': <span class="suffisso_titolo">'.$suffisso_titolo.'</span>'; }?></h1>
-                <?php else : ?>
-                    <h1 class="archive-title">SPETTACOLI</h1>
-                <?php endif;  ?>                    
+                <h1 class="archive-title">TEATRI DELLA ZONA: <span class="suffisso_titolo"><?php echo $title;?></span></h1>
 
 
 <?php

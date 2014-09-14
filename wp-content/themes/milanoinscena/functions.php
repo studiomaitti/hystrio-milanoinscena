@@ -190,7 +190,10 @@ add_filter( 'posts_where', 'sm_content_filter', 10, 2 );
 //remove_filter( 'posts_where', 'title_filter', 10, 2 );
 
 
-
+function ri_excerpt_length($length) {
+    return 25;
+}
+add_filter('excerpt_length', 'ri_excerpt_length');
 
 /////////////////////////
 //print_variable($GLOBALS['wp_query']->request);

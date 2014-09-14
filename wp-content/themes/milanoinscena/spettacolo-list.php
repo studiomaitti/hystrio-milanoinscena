@@ -43,7 +43,7 @@ $spettacolo_prezzi=get_field('spettacolo_prezzi');
             </div>
         </div>
         <div class="col-2">
-            <a href="<?php the_permalink(); ?>" class="voto-i voto-<?php echo $voto;?>"  title="<?php echo esc_attr( 'Scheda Spettacolo: '.the_title_attribute( 'echo=0' ) ); ?>">Voto <?php echo $voto;?></a>
+            <a href="<?php the_permalink(); ?>" class="voto-i voto-<?php echo str_replace('.', '_', $voto);?>"  title="<?php echo esc_attr( 'Scheda Spettacolo: '.the_title_attribute( 'echo=0' ) ); ?>">Voto <?php echo $voto;?></a>
         </div>
         <div class="col-3">
             <a href="<?php the_permalink(); ?>" rel="bookmark"  title="<?php echo esc_attr( 'Scheda Spettacolo: '.the_title_attribute( 'echo=0' ) ); ?>" class="link-spettacolo">Scheda Spettacolo</a>

@@ -15,7 +15,29 @@
  */
 
 get_header(); ?>
+<script>
+    jQuery(document).ready(function(){
+        //MENU
+        if(jQuery('.leggi-tutto').length){
+            jQuery('.leggi-tutto').bind('click',function(e){
+                e.preventDefault();
+                jQuery(this).hide();
+                jQuery('.leggi-tutto-testo').show();
+            });
+        }
+    });
+</script>
 
+
+<div class="claim">
+    Il primo sito di recensioni di spettacoli teatrali in cartellone a Milano scritte da critici professionisti
+    <a href="#" class="leggi-tutto">... [leggi tutto]</a>
+    <span class="leggi-tutto-testo">che collaborano abitualmente alla rivista <a href="http://www.hystrio.it" target="_blank" title="Visita il sito Hystrio">Hystrio</a>,
+        il trimestrale di teatro e spettacolo più prestigioso e longevo d’Italia. 
+        Non troverete quindi presentazioni, cronache, interviste o comunicati stampa, 
+        ma solo articoli di informazione critica, realizzati dopo la visione degli spettacoli.
+    </span>
+</div>
         <div id="home-menu">
             <div class="menu-i menu-1">
                 <a href="/cerca-spettacolo" title="Cerca lo spettacolo">
