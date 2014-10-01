@@ -7,6 +7,8 @@ $data_da =$oDate_da->format('d-m-Y');
 $oDate_a= DateTime::createFromFormat('Ymd', get_field('data_a'));
 $data_a =$oDate_a->format('d-m-Y');
 $now = new DateTime($now);
+
+
 if($oDate_da->format("U")<=$now->format("U") && $oDate_a->format("U")>=$now->format("U")){
     $s_status_slug='in-corso';
     $s_status_text='In Corso';
@@ -17,7 +19,6 @@ if($oDate_da->format("U")<=$now->format("U") && $oDate_a->format("U")>=$now->for
     $s_status_slug='terminato';
     $s_status_text='Terminato';
 }
-
 
 
 $voto=get_field('voto');

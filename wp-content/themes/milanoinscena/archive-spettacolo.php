@@ -254,6 +254,20 @@ if(isset($_GET['cal']) && $_GET['cal']==1){
     $back_to='/calendari';
 }
 ?>
+<script>
+    jQuery(document).ready(function(){
+        //MENU
+        if(jQuery('.leggi-tutto').length){
+            jQuery('.leggi-tutto').bind('click',function(e){
+                e.preventDefault();
+                jQuery(this).hide();
+                jQuery('.leggi-tutto-testo').show();
+            });
+        }
+    });
+</script>
+
+
 <div class="back-to">
     <a href="<?php echo $back_to;?>">
         torna alla ricerca

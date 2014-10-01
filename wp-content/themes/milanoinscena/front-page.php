@@ -30,12 +30,10 @@ get_header(); ?>
 
 
 <div class="claim">
-    Il primo sito di recensioni di spettacoli teatrali in cartellone a Milano scritte da critici professionisti
-    <a href="#" class="leggi-tutto">... [leggi tutto]</a>
-    <span class="leggi-tutto-testo">che collaborano abitualmente alla rivista <a href="http://www.hystrio.it" target="_blank" title="Visita il sito Hystrio">Hystrio</a>,
-        il trimestrale di teatro e spettacolo più prestigioso e longevo d’Italia. 
+    Il primo sito di recensioni di spettacoli teatrali in cartellone a Milano scritte da critici professionisti <a href="#" class="leggi-tutto">... [leggi tutto]</a>
+    <span class="leggi-tutto-testo">che collaborano abitualmente alla rivista <a href="http://www.hystrio.it" target="_blank" title="Visita il sito Hystrio">Hystrio</a>, il trimestrale di teatro e spettacolo più prestigioso e longevo d’Italia. 
         Non troverete quindi presentazioni, cronache, interviste o comunicati stampa, 
-        ma solo articoli di informazione critica, realizzati dopo la visione degli spettacoli.
+        ma solo articoli di informazione critica, realizzati dopo la visione degli spettacoli. Il sito “Milano in Scena” è stato realizzato nell’ambito del Progetto “Twister – Nuovo pubblico in movimento” grazie al contributo di Fondazione Cariplo.
     </span>
 </div>
         <div id="home-menu">

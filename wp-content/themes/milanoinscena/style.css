@@ -438,7 +438,8 @@ a:hover {
 /* Header */
 .site-header {
     min-height: 136px;
-    margin-bottom: 20px;
+    min-height: 100px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -629,8 +630,8 @@ a:hover {
 .claim{
     border-bottom: 1px solid #ddd;
     clear: both;
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 18px;
     margin: 15px 0;
     padding-bottom: 10px;
     text-align: center;
@@ -1200,12 +1201,12 @@ body.single-teatro .teatro_orari{
     overflow: hidden;
 }
 .spettacoli-loop .spettacolo-i .col-1{
-    width: 62%;
+    width: 60%;
     float: left;
     background: #fff;
 }
 .spettacoli-loop .spettacolo-i .col-2{
-    width: 27%;
+    width: 29%;
     float: left;
 }
 .spettacoli-loop .spettacolo-i .col-3{
@@ -1236,11 +1237,11 @@ body.single-teatro .teatro_orari{
 .spettacoli-loop .spettacolo-i .voto-1_5{
     background: url(images/ico-stars-1_5-small.png) no-repeat center center;
 }
-.spettacoli-loop .spettacolo-i .voto-2_5{
-    background: url(images/ico-stars-2_5-small.png) no-repeat center center;
-}
 .spettacoli-loop .spettacolo-i .voto-2{
     background: url(images/ico-stars-2-small.png) no-repeat center center;
+}
+.spettacoli-loop .spettacolo-i .voto-2_5{
+    background: url(images/ico-stars-2_5-small.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i .voto-3{
     background: url(images/ico-stars-3-small.png) no-repeat center center;
@@ -1289,10 +1290,10 @@ body.single-teatro .teatro_orari{
     background: url(images/ico-in-corso-futuro.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i .in-corso-i.in-corso-in-corso{
-    background: url(images/ico-in-corso-futuro.png) no-repeat center center;
+    background: url(images/ico-in-corso-in-corso.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i .in-corso-i.in-corso-terminato{
-    background: url(images/ico-in-corso-futuro.png) no-repeat center center;
+    background: url(images/ico-in-corso-terminato.png) no-repeat center center;
 }
 .spettacoli-loop .spettacolo-i a.link-spettacolo{
     position: absolute;
@@ -1342,10 +1343,10 @@ body.single-spettacolo .in-corso-i.in-corso-futuro{
     background: url(images/ico-in-corso-futuro.png) no-repeat center center;
 }
 body.single-spettacolo .in-corso-i.in-corso-in-corso{
-    background: url(images/ico-in-corso-futuro.png) no-repeat center center;
+    background: url(images/ico-in-corso-in-corso.png) no-repeat center center;
 }
 body.single-spettacolo .in-corso-i.in-corso-terminato{
-    background: url(images/ico-in-corso-futuro.png) no-repeat center center;
+    background: url(images/ico-in-corso-terminato.png) no-repeat center center;
 }
 
 
@@ -1487,12 +1488,8 @@ form.form input.form-submit{
 -------------------------------------------------------------- */
 body.page-template-page-templatesricerca-spettacolo-php{}
 body.page-template-page-templatesricerca-spettacolo-php .cerca-spettacolo-form{
-	float: left;
-	width: 62%;
 }
 body.page-template-page-templatesricerca-spettacolo-php .cerca-spettacolo-sel-rapida{
-	float: left;
-	width: 38%;
 }
 
 
@@ -1522,7 +1519,7 @@ body.page-template-page-templatescalendari-php .cerca-spettacolo-sel-rapida a.bu
 -------------------------------------------------------------- */
 #mappa-teatri{
     width: 100%;
-    height: 300px;
+    height: 400px;
     margin-top: 20px;
 }
 #mappa-teatri img{
@@ -1547,6 +1544,24 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
 }
 
 
+/* FOOTER */
+#footer .hystrio,
+#footer .site-info,
+#footer .progetto-di,
+#footer .finanziato-da
+{
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #949497;
+}
+#footer .hystrio img,
+#footer .site-info img,
+#footer .progetto-di img,
+#footer .finanziato-da  img
+{
+    margin-top: 3px;
+}
+
 
 .php{
     clear:both;
@@ -1558,6 +1573,11 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
     line-height: 20px;
 }
 
+/* TEST 
+body .site-header{
+    background: #0ff !important;
+}
+*/
 
 /* =Media queries
 -------------------------------------------------------------- */
@@ -1576,6 +1596,12 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
+/* TEST 
+    body .site-header{
+        background: #0F0 !important;
+    }
+*/
+    
     body {
         background: url('images/bg-body-600.png') #ffffff no-repeat bottom center;
     }
@@ -1648,14 +1674,47 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
     -------------------------------------------------------------- */
     #footer .hystrio{
         float: left;
-        width: 22%;
+        width: 23%;
+        border-bottom: 0;
+        padding-left: 10px;
     }
     #footer .site-info{
-        float: left;
-        width: 76%;
+        float: right;
+        width: 70%;
         line-height: 1.6;
-        border-left: 1px solid #949497;
+        padding-right: 10px;
+        min-height: 70px;
+        border-bottom: 0;
+        text-align: right;
+    }
+    #footer .progetto-di{
+        float: left;
+        width: 35%;
+        line-height: 1.6;
         padding-left: 10px;
+        overflow: hidden;
+        min-height: 70px;
+        border-top: 1px solid #949497;
+        border-bottom: 0;
+        padding-top: 5px;
+    }
+    #footer .progetto-di .progetto-di-t{
+        float: left;
+        width: 70%;
+    }
+    #footer .finanziato-da{
+        float: right;
+        width: 35%;
+        border-top: 1px solid #949497;
+        line-height: 1.6;
+        padding-right: 10px;
+        min-height: 70px;
+        border-bottom: 0;
+        text-align: right;
+        padding-top: 5px;
+    }
+    #footer .finanziato-da img{
+        margin-top: 5px;
     }
 
 
@@ -1729,12 +1788,36 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
     .spettacoli-loop .spettacolo-i .teatro{
         font-size: 12px;
     }
+    
+    /* =TEMPLATE RICERCA SPETTACOLO
+    -------------------------------------------------------------- */
+    body.page-template-page-templatesricerca-spettacolo-php{}
+    body.page-template-page-templatesricerca-spettacolo-php .cerca-spettacolo-form{
+            float: left;
+            width: 62%;
+    }
+    body.page-template-page-templatesricerca-spettacolo-php .cerca-spettacolo-sel-rapida{
+            float: left;
+            width: 38%;
+    }
+    .cerca-spettacolo-sel-rapida div.button{
+        text-align: left;
+        font-size: 16px;
+        padding: 15px 35px 15px 30px;
+    }
+
+
 }
 @media screen and (min-width: 700px) {
+/* TEST 
+    body .site-header{
+        background: #00f !important;
+    }
+*/
     
     .site-header {
         min-height: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .site-header .social-less-600{
         display: none;
@@ -1760,7 +1843,7 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
         background: url('images/ico-facebook.png') no-repeat #daccae center bottom;
     }
     .site-header .social a.twitter{
-        background: url('images/ico-twitter.png') no-repeat #daccae center bottom;
+        background: url('images/ico-twitter.png') no-repeat #daccae center bottom;        
     }
     .site-header .social a.youtube{
         background: url('images/ico-youtube.png') no-repeat #daccae center bottom;
@@ -1798,24 +1881,42 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
         line-height: 28px;
         text-align: center;
     }
+    
     .spettacoli-loop .spettacolo-i .voto-0{
         background: url(images/ico-stars-0.png) no-repeat center center;
+    }
+    .spettacoli-loop .spettacolo-i .voto-0_5{
+        background: url(images/ico-stars-0_5.png) no-repeat center center;
     }
     .spettacoli-loop .spettacolo-i .voto-1{
         background: url(images/ico-stars-1.png) no-repeat center center;
     }
+    .spettacoli-loop .spettacolo-i .voto-1_5{
+        background: url(images/ico-stars-1_5.png) no-repeat center center;
+    }
     .spettacoli-loop .spettacolo-i .voto-2{
         background: url(images/ico-stars-2.png) no-repeat center center;
+    }
+    .spettacoli-loop .spettacolo-i .voto-2_5{
+        background: url(images/ico-stars-2_5.png) no-repeat center center;
     }
     .spettacoli-loop .spettacolo-i .voto-3{
         background: url(images/ico-stars-3.png) no-repeat center center;
     }
+    .spettacoli-loop .spettacolo-i .voto-3_5{
+        background: url(images/ico-stars-3_5.png) no-repeat center center;
+    }
     .spettacoli-loop .spettacolo-i .voto-4{
         background: url(images/ico-stars-4.png) no-repeat center center;
+    }
+    .spettacoli-loop .spettacolo-i .voto-4_5{
+        background: url(images/ico-stars-4_5.png) no-repeat center center;
     }
     .spettacoli-loop .spettacolo-i .voto-5{
         background: url(images/ico-stars-5.png) no-repeat center center;
     }
+    
+
     .spettacoli-loop .spettacolo-i a.link-spettacolo{
         width: 56px;
         height: 64px;
@@ -1834,18 +1935,22 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
         margin-left: 0;
     }
     form.form input.form-text {
-        width: 400px;
+        width: 310px;
     }
 
     body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
         background: url(images/ico-teatro.png) no-repeat center center;
     }
-
-
+    
 }
 
 /* Minimum width of 980 pixels. */
 @media screen and (min-width: 980px) {
+/* TEST 
+    body .site-header{
+        background: #000 !important;
+    }
+*/
     
     body {
         background: url('images/bg-body.png') #ffffff no-repeat bottom center;
@@ -1894,7 +1999,64 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
     body.post-type-archive-teatro .spettacoli-loop .spettacolo-i .col-1{
         width: 93%;
     }
+    /* =TEMPLATE CALENDARI
+    -------------------------------------------------------------- */
+    form.form input.form-text {
+        width: 400px;
+    }
+    .cerca-spettacolo-sel-rapida div.button{
+        text-align: center;
+        font-size: 18px;
+    }
 
+    /* =Footer
+    -------------------------------------------------------------- */
+    #footer .hystrio{
+        float: left;
+        width: 14%;
+        border-bottom: 0;
+    }
+    #footer .site-info{
+        float: left;
+        width: 45%;
+        line-height: 1.6;
+        border-left: 1px solid #949497;
+        padding-left: 10px;
+        min-height: 70px;
+        border-bottom: 0;
+        text-align: left;
+    }
+    #footer .progetto-di{
+        float: left;
+        width: 18%;
+        line-height: 1.6;
+        border-bottom: 0;
+        border-top: 0;
+        border-left: 1px solid #949497;
+        padding-left: 10px;
+        overflow: hidden;
+        min-height: 70px;
+    }
+    #footer .progetto-di .progetto-di-t{
+        float: left;
+        width: 70%;
+    }
+    #footer .finanziato-da{
+        float: left;
+        width: 17%;
+        line-height: 1.6;
+        border-bottom: 0;
+        border-top: 0;
+        border-left: 1px solid #949497;
+        padding-left: 10px;
+        min-height: 70px;
+        text-align: left;
+    }
+    #footer .finanziato-da img{
+        margin-top: 5px;
+    }
+
+    
 }
 
 
@@ -1929,8 +2091,7 @@ body.post-type-archive-teatro .spettacoli-loop .spettacolo-i a.link-spettacolo{
 		position: relative !important;
 	}
 	.site-header {
-		margin-bottom: 72px;
-		margin-bottom: 5.142857143rem;
+		margin-bottom: 20px;
 		text-align: left;
 	}
 	.site-header h1 {

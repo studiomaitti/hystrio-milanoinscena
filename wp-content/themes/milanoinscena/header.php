@@ -38,12 +38,12 @@
 	<header id="masthead" class="site-header" role="banner">
             <hgroup>
                 <div class="social-less-600">
-                    <a href="#" title="Seguici su Pinterest" class="pinterest">Pinterest</a>
-                    <a href="#" title="Seguici su Facebook" class="facebook">Facebook</a>
-                    <a href="#" title="Seguici su Twitter" class="twitter">Twitter</a>
-                    <a href="#" title="Seguici su Youtube" class="youtube">Youtube</a>
-                    <a href="#" title="Seguici su Tumbler" class="tumbler">Tumbler</a>
-                    <a href="#" title="Scopri Hystrio" class="hystrio">hystrio</a>
+                    <a href="http://www.pinterest.com/MilanoInScena/" title="Guardaci su Pinterest" class="pinterest" target="_blank">Pinterest</a>
+                    <a href="https://www.facebook.com/MilanoInScena" title="Seguici su Facebook" class="facebook" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/MilanoInScena" title="Scrivici su Twitter" class="twitter" target="_blank">Twitter</a>
+                    <a href="https://www.youtube.com/user/HystrioTrimestrale" title="Seguici su Youtube" class="youtube" target="_blank">Youtube</a>
+                    <a href="http://redazionehystrio.tumblr.com/" title="Seguici su Tumblr" class="tumbler" target="_blank">Tumbler</a>
+                    <a href="http://www.hystrio.it/" title="Scopri Hystrio" class="hystrio" target="_blank">hystrio</a>
                 </div>
 
                 <h1 class="site-title">
@@ -61,12 +61,12 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="#" title="Seguici su Pinterest" class="pinterest">Pinterest</a>
-                    <a href="#" title="Seguici su Facebook" class="facebook">Facebook</a>
-                    <a href="#" title="Seguici su Twitter" class="twitter">Twitter</a>
-                    <a href="#" title="Seguici su Youtube" class="youtube">Youtube</a>
-                    <a href="#" title="Seguici su Tumbler" class="tumbler">Tumbler</a>
-                    <a href="#" title="Scopri Hystrio" class="hystrio">hystrio</a>
+                    <a href="http://www.pinterest.com/MilanoInScena/" title="Seguici su Pinterest" class="pinterest" target="_blank">Pinterest</a>
+                    <a href="https://www.facebook.com/MilanoInScena" title="Seguici su Facebook" class="facebook" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/MilanoInScena" title="Seguici su Twitter" class="twitter" target="_blank">Twitter</a>
+                    <a href="https://www.youtube.com/user/HystrioTrimestrale" title="Seguici su Youtube" class="youtube" target="_blank">Youtube</a>
+                    <a href="http://redazionehystrio.tumblr.com/" title="Seguici su Tumbler" class="tumbler" target="_blank">Tumbler</a>
+                    <a href="http://www.hystrio.it/" title="Scopri Hystrio" class="hystrio" target="_blank">hystrio</a>
                 </div>
             </hgroup>
 	</header><!-- #masthead -->
